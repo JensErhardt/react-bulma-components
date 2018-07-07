@@ -8,9 +8,15 @@ class App extends React.Component {
 
     return (
       <div>
-        <Button className=""/>
-        <Button className=""/>
-        <Button className=""/>
+        <Button className="is-danger">
+          Button Danger
+          </Button>
+          <Button className="is-primary">
+          Button Primary
+          </Button>
+          <Button className="is-success">
+          Button Success
+          </Button>
       </div>
     );
   }
@@ -23,7 +29,7 @@ class Button extends React.Component {
   getClassName() {
     let res = 'button';
     if (this.props.className)
-    res += ' ' + this.props.className;
+      res += ' ' + this.props.className;
     let types = {
       isPrimary: 'is-primary',
       isSuccess: 'is-success',
